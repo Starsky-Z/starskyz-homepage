@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="StarSkyZ,主页，个人主页">
+    <meta name="description" content="无人问津的主页">
+    <title>StarSkyZの主页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="welcome-toast"></div>
+
+    <meting-js
+        api="https://meting.api.redcha.cn/api?server=:server&type=:type&id=:id&r=:r"
+        fixed="true"
+        lrc-type="1"
+        server="netease"
+        type="playlist"
+        id="x"
+        list-folded="true"
+        autoplay="false"
+        loop="all"
+        order="random"
+        preload="auto"
+        volume="0.7">
+    </meting-js>
+
+    <div class="site-wrapper">
+        <div class="content-container">
+            <div class="left-pane">
+                <div class="intro-box">
+                    <img src="images/icon/logo.png" alt="主页图标" class="main-logo">
+                    <h1><span class="brand-text">StarSkyZ.top</span></h1>
+                    <p class="description">一个建立于 21 世纪的小站，存活于互联网的边缘</p>
+                    <div class="social-links">
+                        <!-- Social links will be dynamically loaded here -->
+                    </div>
+                    <div class="hitokoto-wrapper">
+                        <span id="hitokoto-sentence">正在获取一言...</span>
+                        <span id="social-tip"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-pane">
+                <div id="digital-clock"></div>
+                <div id="time-capsule"></div>
+                <nav class="card-nav">
+                    <!-- Navigation cards will be dynamically loaded here -->
+                </nav>
+                <footer class="footer-center mobile-footer">
+                    <p id="mobile-copyright" class="copyright"></p>
+                    <p class="icp"><a href="https://beian.miit.gov.cn/" rel="noreferrer" target="_blank">x</a></p>
+                    <p class="icp"><a href="https://beian.mps.gov.cn/#/query/webSearch" rel="noreferrer" target="_blank">x</a></p>
+                    <p class="icp"><a href="https://icp.gov.moe/?keyword=20250112" rel="noreferrer" target="_blank">x</a></p>
+                    <div id="mobile-runtime"></div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-center desktop-footer">
+        <p id="desktop-copyright" class="copyright"></p>
+        <div>
+            <p class="icp" style="margin: 0;"><a href="https://beian.miit.gov.cn/" rel="noreferrer" target="_blank">x</a></p>
+            <p class="icp" style="margin: 0;"><a href="https://beian.mps.gov.cn/#/query/webSearch" rel="noreferrer" target="_blank">x</a></p>
+            <p class="icp" style="margin: 0;"><a href="https://icp.gov.moe/?keyword=20250112" rel="noreferrer" target="_blank">x</a></p>
+        </div>
+        <div id="desktop-runtime"></div>
+    </footer>
+
+    <div id="mobile-switch">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
